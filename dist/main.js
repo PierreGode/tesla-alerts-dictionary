@@ -30,3 +30,10 @@ eval("const alert_menu = document.getElementById(\"alert_menu\");\r\nconst open_
 /******/ 	
 /******/ })()
 ;
+const buttons = document.querySelectorAll('.alerts_btn');
+
+buttons.forEach(button => {
+  if (button.textContent.trim() !== "") {
+    button.classList.add('has-content');
+  }
+});
